@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ringkasan Kegiatan Mingguan</title>
+  <link rel="stylesheet" href="style-ringkasan.css">
+  <!-- <link rel="stylesheet" href="style-dashboard.css"> -->
+</head>
+<body>
+  <div class="dashboard-wrapper">
+    <!-- Tombol kembali ke dashboard -->
+    <button class="menu-toggle" onclick="window.location.href='guru_dashboard.php'">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Konten Ringkasan -->
+    <div class="content-area active">
+      <h4>Teknik Pembelajaran</h4>
+      <p>Halo, berikut opsi mengenai teknik pembelajaran yang tersedia saat ini.</p>
+      <ul>
+        <li><a href="list-ringkasan.php">Daftar Teknik Pembelajaran yang telah diupload para Guru.</a></li>
+        <li><a href="https://youtu.be/eb10cqYmhSQ?si=Nd5OXi3FMFy7GFOg">Video Mengenai Teknik Pembelajaran</a></li>
+        <li>Video Tutorial Penggunaan Fitur.</li>
+      </ul>
+
+      <!-- Form Upload -->
+      <hr style="margin: 20px 0;">
+      <h4>Unggah File Anda</h4>
+      <form action="upload-ringkasan.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="ringkasan_file" accept=".pdf,.doc,.docx,.txt" required>
+        <br><br>
+        <button type="submit">Unggah</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

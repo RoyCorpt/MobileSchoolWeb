@@ -1,0 +1,7 @@
+config.php
+uploads/*
+materi/*
+media/*
+!uploads/.gitkeep
+!materi/.gitkeep
+!media/.gitkeep
